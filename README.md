@@ -1,24 +1,22 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+As a software engineer, I am constantly seeking to expand my knowledge and skills in various programming languages and development practices. This project represents my first step in building a professional portfolio to showcase my journey in software development.
 
-{Provide a description of your software}
+This simple program outputs a greeting message to the console, demonstrating basic syntax and program structure in Python. While straightforward, it serves as a foundation for more complex applications and helps establish proper development workflow practices.
 
-{Describe your purpose for creating this software.}
-
-{Provide a link to your YouTube demonstration. It should be a one minute demo of the software running and a walkthrough of the code.}
+My purpose in creating this software was to establish a solid foundation for version control practices using Git and GitHub, while also ensuring my development environment is properly configured for future projects.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+The development environment consists of Visual Studio Code as the primary IDE, which provides excellent integration with Git and Python. I also utilized Git for version control and GitHub for repository hosting.
 
-{Describe the programming language that you used}
+Python 3.9 was chosen as the programming language for this project due to its readability and widespread use in the software industry. Python's simple syntax makes it an excellent choice for demonstrating basic programming concepts.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
+- [Git Documentation](https://git-scm.com/doc)
+- [Python Official Documentation](https://docs.python.org/3/)
+- [GitHub Guides](https://guides.github.com/)

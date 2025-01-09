@@ -4,7 +4,7 @@ As a software engineer, I am constantly seeking to expand my knowledge and skill
 
 My purpose in creating this software was to establish a solid foundation for version control practices using Git and GitHub, while also ensuring my development environment is properly configured for future projects.
 
-[Software Demo Video](https://youtu.be/ixzZezZqTLQ)
+[Software Demo Video](https://youtu.be/jJdgHAljHAQ)
 
 # Development Environment
 

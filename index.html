@@ -25,11 +25,14 @@
     <p id="output"></p>
 
     <script>
+        function getGreeting(name) {
+            return `Hello ${name}! Welcome to my software development portfolio.`;
+        }
+
         function greet() {
             const name = document.getElementById('nameInput').value;
             const output = document.getElementById('output');
-            output.innerHTML = `Hello ${name}! Welcome to my software development portfolio.<br>
-                              This demonstrates a simple program with user input.`;
+            output.innerHTML = getGreeting(name);
         }
     </script>
 </body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        input, button {
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World Portfolio</h1>
+    <input type="text" id="nameInput" placeholder="Please enter your name">
+    <button onclick="greet()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        function greet() {
+            const name = document.getElementById('nameInput').value;
+            const output = document.getElementById('output');
+            output.innerHTML = `Hello ${name}! Welcome to my software development portfolio.<br>
+                              This demonstrates a simple program with user input.`;
+        }
+    </script>
+</body>
+</html> 

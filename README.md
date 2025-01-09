@@ -2,8 +2,6 @@
 
 As a software engineer, I am constantly seeking to expand my knowledge and skills in various programming languages and development practices. This project represents my first step in building a professional portfolio to showcase my journey in software development.
 
-This simple program outputs a greeting message to the console, demonstrating basic syntax and program structure in Python. While straightforward, it serves as a foundation for more complex applications and helps establish proper development workflow practices.
-
 My purpose in creating this software was to establish a solid foundation for version control practices using Git and GitHub, while also ensuring my development environment is properly configured for future projects.
 
 [Software Demo Video](http://youtube.link.goes.here)

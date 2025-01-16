@@ -4,21 +4,21 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from weather_analysis import load_data, analyze_monthly_temperature_trend, analyze_temp_cloud_correlation, analyze_extreme_weather
 
-
+# Streamlit app setup
 st.title('London Weather Data Analysis')
 
-
+# File uploader for user to upload the dataset
 uploaded_file = st.file_uploader("Upload your CSV file", type=['csv'])
 
 if uploaded_file is not None:
-    
+    # Load the data
     df = load_data(uploaded_file)
     
-    
+    # Display the first few rows of the dataframe
     st.subheader('Data Preview')
     st.write(df.head())
     
-    
+    # Perform analyses if the dataframe is not empty
     if not df.empty:
         # Monthly temperature trend analysis
         st.subheader('Average Monthly Temperature Trend')
@@ -40,6 +40,8 @@ if uploaded_file is not None:
         extreme_weather = analyze_extreme_weather(df)
         st.write(extreme_weather)
     else:
+        # Display an error message if the DataFrame is empty
         st.error("The DataFrame is empty after cleaning. Please check the data and cleaning steps.")
 else:
+    # Inform the user to upload a CSV file
     st.info("Please upload a CSV file to proceed with the analysis.")

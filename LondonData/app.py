@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from weather_analysis import load_data, analyze_monthly_temperature_trend, analyze_temp_cloud_correlation, analyze_extreme_weather
+from weatherAnalysis import load_data, analyze_monthly_temperature_trend, analyze_temp_cloud_correlation, analyze_extreme_weather
 
 # Streamlit app setup
 st.title('London Weather Data Analysis')
@@ -22,18 +22,22 @@ if uploaded_file is not None:
     if not df.empty:
         # Monthly temperature trend analysis
         st.subheader('Average Monthly Temperature Trend')
-        monthly_temps = analyze_monthly_temperature_trend(df)
+        fig_temp, monthly_temps = analyze_monthly_temperature_trend(df)  # Unpack both return values
         
-        # Use Streamlit's line_chart with explicit columns
-        st.line_chart(monthly_temps.set_index('date')['mean_temp'])
+        # Display the matplotlib figure
+        st.pyplot(fig_temp)
         
         # Temperature and cloud cover correlation analysis
         st.subheader('Temperature vs Cloud Cover Correlation')
-        correlation = analyze_temp_cloud_correlation(df)
-        st.write(f"Correlation: {correlation:.2f}")
+        fig_corr, correlation_stats = analyze_temp_cloud_correlation(df)  # Unpack both return values
         
-        # Display the correlation heatmap
-        st.image('correlation_heatmap.png', caption='Correlation Heatmap')
+        # Display correlation statistics
+        st.write(f"Correlation Coefficient: {correlation_stats['correlation']:.3f}")
+        st.write(f"Correlation Strength: {correlation_stats['correlation_strength']}")
+        st.write(f"P-value: {correlation_stats['p_value']:.3f}")
+        
+        # Display the correlation figure
+        st.pyplot(fig_corr)
         
         # Extreme weather analysis
         st.subheader('Monthly Weather Statistics')

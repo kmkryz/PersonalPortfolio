@@ -2,7 +2,7 @@
 
 A comprehensive weather tracking system using Firebase/Firestore for cloud storage. This project demonstrates real-time weather updates, user authentication, and historical weather data management.
 
-[Software Demo Video](http://youtube-link-here)
+[Software Demo Video](https://youtu.be/SN1qd3B9zDQ)
 
 ## Features
 
